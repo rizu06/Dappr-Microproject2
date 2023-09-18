@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Inter:wght@400;500;600;700&family=Poppins:wght@200;400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	height: 120vh;
+	width: 100vw;
+	overflow-x: hidden;
+}
+header {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	width: 100vw;
+	background-color: #6f6af7;
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.helpButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+}
+header .title {
+	font-family: Delius;
+	font-size: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+ul.navLinks {
+	list-style-type: none;
+	display: flex;
+}
+ul.navLinks li {
+	margin: 0 40px;
+	font-size: 18px;
+	color: #fff;
+}
+.headerRight {
+	display: flex;
+}
+.headerForm {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+}
+.headerForm input {
+	border-radius: 63px;
+	height: 37px;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	width: 300px;
+	margin-right: 50px;
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type='search']::-ms-clear {
+	display: none;
+	width: 0;
+	height: 0;
+}
+input[type='search']::-ms-reveal {
+	display: none;
+	width: 0;
+	height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
+.headerForm button {
+	border: none;
+	position: absolute;
+	right: 60px;
+	outline: none;
+	background-color: transparent;
+}
+.headerForm button i {
+	color: gray;
+	font-size: 18px;
+}
+header i {
+	cursor: pointer;
+	color: #fff;
+	font-size: 2em;
+}
+.cover {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	justify-content: center;
+	width: 100%;
+	margin: 60px 0;
+	flex-wrap: wrap;
+	/* background-color: gray; */
+}
+.cover .sideImage {
+	flex-basis: 30%;
+	width: 100%;
+}
+.cover .textArea {
+	width: 100%;
+	flex-basis: 50%;
+}
+textarea {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
+	background-color: #e5d8ff;
+	border: none;
+	padding: 30px;
+	font-size: 20px;
+	outline: none;
+	line-height: 30px;
+}
+/* Social Icons */
+
+.socialIcons {
+	position: fixed;
+	top: 45vh;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+.socialIcons img {
+	cursor: pointer;
+	width: 40px;
+
+	border: 1px solid black;
+	padding: 5px;
+	margin: 2px 0;
+	border-radius: 5px;
+}
+/* Cards */
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 60px;
+}
+.card {
+	padding: 10px 20px;
+	width: 350px;
+	height: 80px;
+	color: #fff;
+	box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 11px;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	font-size: 18px;
+}
+#b1{
+    background: #929DFF;
+
+}
+#b2{
+    background: #734CF2;
+
+
+}
+#b3{
+    background: #D288FF;
+
+
+}
+#b4{
+    background: #000000;
+
+
+}
+#button-form{
+    display: flex;
+    flex-direction: row;
+    background: #483EFF;
+
+    height: 70vh;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 150px;
+
+}
+
+#form-buttons form{
+    /* background-color: #6F6AF7; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70vh;
+    margin: 2vw;
+    
+    align-items: center;
+    
+    
+}
+
+#form-buttons form button{
+    background: #483EFF;
+    color: white;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+    width: 15vw;
+    height: 10vh;
+    border-radius: 15px;
+    list-style: none;
+   
+    
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    
+    
+
+}
+
+#form-buttons form button:hover{
+    background: #BCE0F6;
+    border-color: #BCE0F6;
+    color: black;
+    
+}
+
+
+#form-info{
+    position: relative;
+    /* background-color: yellow; */
+    width: 55vw;
+    height: 60vh;
+    background-color: white;
+    
+    border-radius: 20px;
+}
+
+
+#form-info p{
+    color: black;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.105em;
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    
+
+}
+#form-info ul{
+    color: black;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 6vh;
+    letter-spacing: 0.05em;
+    text-align: left;
+    list-style: none;
+    margin-left: 2vw;
+    
+
+}
+#form-info button{
+    background-color: black;
+    color: white;
+    width: 170px;
+    position: absolute;
+    height: 60px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    /* Position the button absolutely within the container */
+    bottom: 20px; /* Distance from the bottom edge of the container */
+    right: 20px;
+    border-radius: 9px;
+
+
+}
